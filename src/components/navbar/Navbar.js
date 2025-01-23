@@ -13,7 +13,7 @@ export default async function Navbar(props) {
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">Blog Site</a>
         </div>
-        {/* navbar */}
+        {/* navbar link */}
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             <li><Link href="/">Home</Link></li>
