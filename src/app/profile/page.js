@@ -12,11 +12,10 @@ const Profile = async () => {
    if(!user) {
     redirect('/api/auth/login?post_login_redirect_url=/dashboard')
    }
-  
 
     return (
         <div>
-            Welcome to your profile!
+            Welcome to your profile! 
         </div>
     );
 };
