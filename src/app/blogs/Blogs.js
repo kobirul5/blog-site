@@ -7,15 +7,11 @@ const Blogs = async () => {
     return (
         <>
             {
-                data?.slice(0,20).map((item,idx)=><div key={idx} className="card bg-base-100  shadow-xl">
+                data?.slice(0,20).map((item,idx)=><Link href={`blogs/${item.id}`} key={idx} className="card bg-base-100  shadow-xl">
                 <div className="card-body items-center text-center">
                   <h2 className="card-title">{item.title}</h2>
-                  <p>{item.body}</p>
-                  <div className="card-actions">
-                    <Link href={`blogs/${item.id}`} className="btn btn-primary">View Details</Link>
-                  </div>
                 </div>
-              </div>)
+              </Link>)
             }
         </>
     );
