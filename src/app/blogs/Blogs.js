@@ -7,8 +7,9 @@ const Blogs = async () => {
     return (
         <>
             {
-                data?.slice(0,20).map((item,idx)=><Link href={`blogs/${item.id}`} key={idx} className="card bg-base-100  shadow-xl">
+                data?.map((item,idx)=><Link href={`blogs/${item.id}`} key={idx} className="card bg-base-100  shadow-xl">
                 <div className="card-body items-center text-center">
+                  <p>{item.id}</p>
                   <h2 className="card-title">{item.title}</h2>
                 </div>
               </Link>)
