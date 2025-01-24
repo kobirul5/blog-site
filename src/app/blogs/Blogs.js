@@ -7,7 +7,7 @@ const Blogs = async () => {
     return (
         <>
             {
-                data?.map((item,idx)=><Link href={`blogs/${item.id}`} key={idx} className=" mt-2 hover:text-blue-500">
+                data?.map((item,idx)=><Link href={`blogs/${item.id}`} key={idx} className="mt-2 hover:text-blue-500">
                 <div className="">
                   <h2 className="card-title">{item.id}. {item.title}</h2>
                 </div>
